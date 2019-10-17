@@ -4,7 +4,11 @@ const AboutPage = () => (
   <Fragment>
     <h1>Learn a bit about Neil.</h1>
     <span>
-      <a href="https://www.linkedin.com/in/neil-scheuermann/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/neil-scheuermann/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         LinkedIn
       </a>
     </span>
