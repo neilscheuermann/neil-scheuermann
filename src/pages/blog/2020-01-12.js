@@ -1,11 +1,10 @@
 import React, { Fragment } from "react"
-import BlogCard from "../components/BlogCard"
 
-const Blog = () => (
+const Entry = () => (
   <Fragment>
     <h1>Custom iTerm Shortcuts</h1>
-    <p></p>
+    <p>This is where I'll write my blog!</p>
   </Fragment>
 )
 
-export default Blog
+export default Entry
