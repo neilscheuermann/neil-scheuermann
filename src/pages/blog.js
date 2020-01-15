@@ -1,21 +1,32 @@
 import React, { Fragment } from "react"
-import { Link } from "gatsby"
+import Typography from "@material-ui/core/Typography"
 import BlogCard from "../components/BlogCard"
+import BlogCardVanilla from "../components/BlogCardVanilla"
 import { blogCardEntries } from "../data/blogCardEntries"
 
 const Blog = () => {
   return (
     <Fragment>
-      <h1>Blog</h1>
+      <Typography gutterBottom variant="h2" component="h1">
+        Blog
+      </Typography>
+
       <div className="blog-list">
         {blogCardEntries.map(entry => (
-          <Link key={entry.title} to={`/blog/${entry.urlPath}`}>
+          <>
             <BlogCard
               date={entry.date}
               description={entry.description}
               title={entry.title}
+              urlPath={entry.urlPath}
             />
-          </Link>
+            <BlogCardVanilla
+              date={entry.date}
+              description={entry.description}
+              title={entry.title}
+              urlPath={entry.urlPath}
+            />
+          </>
         ))}
       </div>
     </Fragment>

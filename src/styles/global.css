@@ -2,6 +2,39 @@ body {
   margin: 0px;
 }
 
+h2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 8px;
+  color: blue;
+}
+
+p {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: .875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+
 .content {
   max-width: 1200px;
 }
+
+.blog-list {
+  display: flex;
+}
+
+/* =============== */
+/* BLOG CARD STUFF */
+/* =============== */
+
+.image-wrapper {
+  width: 300px;
+  height: 140px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
