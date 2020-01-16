@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Chip from "./UI/Chip"
 import Button from "./UI/Button"
 import {
@@ -21,7 +22,9 @@ const BlogCardVanilla = ({ date, description, title, urlPath }) => {
       <Chip>vim</Chip>
       <Chip>javascript</Chip>
       <TextContentWrapper>
-        <BlogCardHeader>{title}</BlogCardHeader>
+        <Link to={`/blog/${urlPath}`}>
+          <BlogCardHeader>{title}</BlogCardHeader>
+        </Link>
         <p>{date}</p>
         <p>{description}</p>
       </TextContentWrapper>
