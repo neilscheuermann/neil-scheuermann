@@ -1,64 +1,24 @@
 import React from "react"
-import styled from "styled-components"
 import Gist from "react-gist"
-import { SANS_SERIF_FONT, SERIF_FONT } from "../../data/constants"
 import CodeBlock from "../../components/UI/CodeBlock"
 import Divider from "../../components/UI/Divider"
-// Title
-// Heading
+import {
+  ArticleWrapper,
+  Content,
+  Code,
+  Heading,
+  LI,
+  UL,
+  P,
+  ArticleTitle,
+} from "../../components/styledComponents/BlogArticleStyles"
 // Subheading
 // InlineCode
 
-const ArticleWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
-const Content = styled.div`
-  max-width: 680px;
-  width: 100%;
-`
-
-const Code = styled.code`
-  background-color: rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
-`
-
-const Heading = styled.h2`
-  font-size: 32px;
-`
-
-const LI = styled.li`
-  font-size: 21px;
-  font-weight: 800;
-  line-height: 2em;
-  list-style-type: disc;
-  letter-spacing: 0.2px;
-`
-
-const UL = styled.ul`
-  list-style: none;
-`
-
-const P = styled.p`
-  color: rgba(0, 0, 0, 0.84);
-  font-family: ${SERIF_FONT};
-  font-size: 21px;
-  font-weight: 400;
-`
-
-const Title = styled.h1`
-  color: rgba(0, 0, 0, 0.84);
-  font-family: ${SERIF_FONT};
-  font-weight: 400;
-  font-size: 40px;
-`
-
-const Entry = () => (
+const Article = () => (
   <ArticleWrapper>
     <Content>
-      <Title>Modern JavaScript Fundamentals</Title>
+      <ArticleTitle>Modern JavaScript Fundamentals</ArticleTitle>
       <hr />
       <P>
         Once you get the basics of JavaScript down, you’ll start to pick up tips
@@ -131,4 +91,4 @@ const Entry = () => (
   </ArticleWrapper>
 )
 
-export default Entry
+export default Article
