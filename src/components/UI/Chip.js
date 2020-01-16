@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { HEADER_TEXT_COLOR, MAIN_FONT_FAMILY } from "../../data/constants"
+import { HEADER_TEXT_COLOR, SANS_SERIF_FONT } from "../../data/constants"
 
 const ChipStyled = styled.div`
   background-color: ${HEADER_TEXT_COLOR};
@@ -9,7 +9,7 @@ const ChipStyled = styled.div`
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
   color: white;
   display: inline-block;
-  font-family: ${MAIN_FONT_FAMILY};
+  font-family: ${SANS_SERIF_FONT};
   font-size: 0.8em;
   font-weight: 400;
   height: 24px;
