@@ -38,7 +38,8 @@ const BlogCardVanilla = ({ date, description, title, urlPath }) => {
             "url('https://i.pinimg.com/564x/ec/8e/29/ec8e29e68439e18d6e0eb0ab0a297518.jpg')",
         }}
       />
-      <Chip />
+      <Chip>vim</Chip>
+      <Chip>javascript</Chip>
       <TextContentWrapper>
         <Header>{title}</Header>
         <p>{date}</p>
