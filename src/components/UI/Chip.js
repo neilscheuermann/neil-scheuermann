@@ -16,6 +16,26 @@ const ChipStyled = styled.div`
   line-height: 24px;
   margin: 10px 0 10px 10px;
   padding: 0 12px;
+
+  ${({ animateHide, listRef }) => {
+    // TODO: THIS HASN'T BEEN CUSTOMIZED YET. I WANT TO DO SOMETHING
+    //  LIKE THIS FOR CHIP OR BUTTON SIZE TO KEEP CONSISTENCY ACROSS MY SITE.
+    return (
+      animateHide &&
+      listRef.current &&
+      `
+      margin-left: -${listRef.current.getBoundingClientRect().width}px;
+      transition: margin-left 0.3s ease-in-out;
+    `
+    )
+  }}
+
+  ${({ animateShow }) =>
+    animateShow &&
+    `
+      margin-left: 0;
+      transition: margin-left 0.3s ease-in-out;
+    `}
 `
 
 const Chip = props => {

@@ -9,6 +9,7 @@ const CodeBlockBackground = styled.pre`
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
   font-family: ${MONOSPACE_FONT};
+  margin-top: 56px;
 `
 
 const Code = styled.code`
@@ -16,6 +17,7 @@ const Code = styled.code`
   font-size: 16px;
   line-height: 40px;
   margin-left: 20px;
+  overflow-x: auto;
 `
 
 const CodeBlock = props => {

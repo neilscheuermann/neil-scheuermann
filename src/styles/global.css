@@ -2,7 +2,7 @@ body {
   margin: 0px;
 }
 
-h2 {
+h2, h3 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -17,6 +17,7 @@ p {
   line-height: 1.43;
   letter-spacing: 0.01071em;
 }
+
 
 .content {
   max-width: 1200px;

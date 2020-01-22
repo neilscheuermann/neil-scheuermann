@@ -16,7 +16,7 @@ const Dot = styled.div`
   margin: 0 10px;
 `
 
-const Divider = () => {
+const DividerDotted = () => {
   return (
     <Wrapper>
       <Dot />
@@ -26,4 +26,4 @@ const Divider = () => {
   )
 }
 
-export default Divider
+export default DividerDotted
