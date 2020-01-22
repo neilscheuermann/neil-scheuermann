@@ -19,7 +19,7 @@ import DividerDotted from "../../components/UI/DividerDotted"
 import styled from "styled-components"
 import { BOX_SHADOW, SERIF_FONT } from "../../data/constants"
 
-const ArticleTitle = styled.h1`
+export const ArticleTitle = styled.h1`
   color: rgba(0, 0, 0, 0.84);
   font-family: ${SERIF_FONT};
   font-weight: 400;
@@ -28,50 +28,50 @@ const ArticleTitle = styled.h1`
   margin-bottom: 0;
 `
 
-const ArticleWrapper = styled.div`
+export const ArticleWrapper = styled.div`
   display: flex;
   justify-content: center;
 `
 
-const Content = styled.div`
+export const Content = styled.div`
   max-width: 680px;
   width: 100%;
 `
 
-const Code = styled.code`
+export const Code = styled.code`
   background-color: rgba(0, 0, 0, 0.08);
   box-shadow: ${BOX_SHADOW};
   margin: 0 4px;
 `
-const GifOrImg = styled.img`
+export const GifOrImg = styled.img`
   width: 680px;
   box-shadow: ${BOX_SHADOW};
   border-radius: 5px;
   margin-top: 48px;
 `
 
-const Heading = styled.h2`
+export const Heading = styled.h2`
   font-size: 32px;
   margin-top: 64px;
 `
 
-const LI = styled.li`
+export const LI = styled.li`
   font-size: 21px;
   line-height: 2em;
   list-style-type: disc;
   letter-spacing: 0.2px;
 `
 
-const Link = styled.a`
+export const Link = styled.a`
   text-decoration: none;
 `
 
-const UL = styled.ul`
+export const UL = styled.ul`
   list-style: none;
   margin-top: 40px;
 `
 
-const P = styled.p`
+export const P = styled.p`
   color: rgba(0, 0, 0, 0.84);
   font-family: ${SERIF_FONT};
   font-size: 21px;
@@ -79,7 +79,7 @@ const P = styled.p`
   margin-top: 40px;
 `
 
-const Subheading = styled.h3`
+export const Subheading = styled.h3`
   font-size: 26px;
   margin-top: 48px;
 `
