@@ -16,7 +16,10 @@ const Home = styled.div`
   align-items: center;
 `
 
-const HomeBody = styled.div``
+const HomeBody = styled.div`
+  border: beige solid 20px;
+  border-radius: 20px;
+`
 
 const HomeText = styled.p`
   font-family: ${MONOSPACE_FONT};
@@ -32,7 +35,7 @@ const HomeCursor = styled.div`
   background: #2fc45a;
   transform: translate(0, 4px);
   margin-left: 1px;
-  opacity: 0.8;
+  opacity: $0.4;
 `
 
 const About = styled.div`
@@ -69,6 +72,11 @@ const IndexPage = () => (
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+      {/* TODO: Check to make sure I'm using normalize correctly here. */}
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
       />
     </Helmet>
 
