@@ -57,6 +57,10 @@ const FunTidbits = () => (
             <strong>command + shift + a</strong> to type the same command for
             each open pane.
           </LI>
+          <LI>
+            <strong>command + option + w</strong> to close all panes in that
+            tab.
+          </LI>
         </UL>
       </div>
     </Content>
