@@ -49,7 +49,7 @@ component or its parent.
 
 ## 2/3/2020
 
-- Deep nested object destructuring:
+Deep nested object destructuring:
 ```javascript
 const props = {
   conversation: {
@@ -62,15 +62,21 @@ const { conversation: { inboxUid } } = props
 console.log(inboxUid) // "000"
 ```
 
-- I remembered the delete operator on the "Object" JS Object.
+---
+
+I remembered the delete operator on the "Object" JS Object.
 ```javascript
 delete myObj.key1 // Removes that property from the myObj object.
 ```
 
-- I learned that `git commit -v` (*which stands for verbose*) will **show the unified 
+---
+
+I learned that `git commit -v` (*which stands for verbose*) will **show the unified 
 diff** between the HEAD commit and what would be committed at the bottom of the commit message.
 
-##### One of my favorite vim tools... 🔥
+---
+
+##### One of my favorite vim tools... [**marks**](https://vim.fandom.com/wiki/Using_marks)🔥
 - You can set **file specific** marks with a lower case letter, and **global marks**
   with an uppercase letter.
 - You can set an absolute "mark" by typing `mJ` and then jump to that mark with
@@ -81,7 +87,13 @@ diff** between the HEAD commit and what would be committed at the bottom of the 
 
 ## 2/4/2020
 
-Today I'm going to focus more on setting marks throughout my workflow, not just
+Today I'm going to focus more on using [**marks**](https://vim.fandom.com/wiki/Using_marks) throughout my workflow, not just
 to get to my `.vimrc` or `.zshrc`.
+- I used `J`, `K`, and `L` marks for my daily workflow today. I just use `J`
+  first, then `K` and `L`.
 
-I'm also going to pick a new [vim color theme](https://vimcolors.com/?utf8=%E2%9C%93&bg=dark&order=newest).
+I'm also going to pick a new vim color theme using [vimcolor](https://vimcolors.com).
+- I tried installing
+  [nightfly](https://github.com/bluz71/vim-nightfly-guicolors), but it made the
+column numbers and regular lines the same color which was weird, and NOT what
+they showed in their [preview](https://vimcolors.com/1185/nightfly/dark)...
