@@ -97,3 +97,16 @@ I'm also going to pick a new vim color theme using [vimcolor](https://vimcolors.
   [nightfly](https://github.com/bluz71/vim-nightfly-guicolors), but it made the
 column numbers and regular lines the same color which was weird, and NOT what
 they showed in their [preview](https://vimcolors.com/1185/nightfly/dark)...
+
+
+## 2/5/2020
+
+I found out that in the React Native Debugger, I can toggle the **Redux dev
+tools** with `<command> + <option> + j` and **React dev tools** with 
+`<command> + <option> + k`. The cool thing is that it will save computing power
+when they're turned off too.
+
+Today I have just been ***super fucking*** frustrated as I've battled again to just
+get my local environment ready to dev on. I couldn't figure out how to get it
+running on my physical iPhone and be able to debug. It would only bundle and
+show up if I walked over to the mobile team.
