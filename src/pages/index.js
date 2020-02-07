@@ -3,7 +3,9 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import { MONOSPACE_FONT } from "../data/constants"
+import About from "../components/HomePage/About"
 
+// WTF? vvv
 const FinalLine = styled.div`
   display: flexbox;
 `
@@ -33,10 +35,6 @@ const HomeCursor = styled.div`
   transform: translate(0, 4px);
   margin-left: 1px;
   opacity: $0.4;
-`
-
-const About = styled.div`
-  height: calc(100vh + 48px);
 `
 
 const Portfolio = styled.div`
@@ -119,9 +117,8 @@ const IndexPage = () => {
         </HomeBody>
       </Home>
       {/* -- ABOUT -- */}
-      <About>
-        <h1>About</h1>
-      </About>
+      <About />
+
       {/* -- PORTFOLIO -- */}
       <Portfolio>
         <h1>Portfolio</h1>

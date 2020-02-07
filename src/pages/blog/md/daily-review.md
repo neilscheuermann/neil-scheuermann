@@ -110,3 +110,32 @@ Today I have just been ***super fucking*** frustrated as I've battled again to j
 get my local environment ready to dev on. I couldn't figure out how to get it
 running on my physical iPhone and be able to debug. It would only bundle and
 show up if I walked over to the mobile team.
+
+
+## 2/6/2020 
+
+When trying to use `getByTestId()` from the [react testing library](https://testing-library.com/docs/dom-testing-library/api-queries#bytestid)
+I was unable to query for the testID on a component that was doing some
+different animations. I had to wrap it in a react native `View` component.
+
+It ended up looking like this.
+
+```JSX
+<View testID='assigned-filter-banner'>
+  <SelectedFilter
+    assignedFilter={assignedFilter}
+    currentUserId={currentUser.id}
+    onClose={this.clearAssignedFilter}
+  />
+</View>
+```
+
+Found out I can add `JSX` after the `` ``` `` in the codeblock above to have it
+syntax highlight like JSX.
+
+I can add `` ` ``'s into a code line by surrounding the code with two
+**backticks** on each side instead of one.
+
+Just used this [stack overflow](https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces)
+to set my **tab width** to 2 spaces, as it was defaulting to 8 spaces in my
+**./vimrc** and **markdown** files.
