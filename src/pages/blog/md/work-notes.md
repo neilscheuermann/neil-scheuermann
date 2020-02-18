@@ -33,6 +33,12 @@ rapidash && dc stop schema-registry review-rocket-web && dc ps`
 **Magic:** 
 - `mix phx.server`
 
+**Stormcrow:** 
+- `mix phx.server`
+
+**Mithrandir:** 
+- `yarn start`
+
 **In the podium folder:** 
 - `./ngrok http --subdomain neilsch 4000`
 
@@ -160,3 +166,12 @@ See **iTerm2 -> Preferences -> Keys**
 
 ## To send attachments locally that aren’t pics/vids
 Must be running **Barbados**.
+
+
+## Numbers to use for dev
+    801 389 2710  - spam number that called me this morning.
+    303 289 6786 - another spam number
+    801 628 3842 - another spam number
+    801 721 7976 - another spam number
+    801 369 5708- another spam number
+
