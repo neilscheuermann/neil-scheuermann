@@ -139,3 +139,17 @@ I can add `` ` ``'s into a code line by surrounding the code with two
 Just used this [stack overflow](https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces)
 to set my **tab width** to 2 spaces, as it was defaulting to 8 spaces in my
 **./vimrc** and **markdown** files.
+
+
+## 2/7/2020
+
+I was reminded of the technique of taking a few **deep breath‘s** to re-center
+myself and give my mind a little boost.
+
+When I Google and learn about something at work, I’m **collecting** a lot of little
+**data points** and eventually they all come together to show me the **big picture**.
+I’m still making progress, even if it doesn’t feel like I am.
+
+I feel way more successful when I **plan out my approach** to my daily/weekly task
+and then **ask a teammate** what their thoughts are and how they would approach
+it. It saves me time and teaches me their mindset and approach. 

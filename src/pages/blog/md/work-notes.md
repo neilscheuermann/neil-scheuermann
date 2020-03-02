@@ -63,6 +63,7 @@ For quick reset, `make quick-reset-server`
 - `mix phx.server` 
 
 **Navi**: 
+- `make deps` to install dependency updates.
 - `make server`  
 - iPhone: 
   - `make run-ios` 

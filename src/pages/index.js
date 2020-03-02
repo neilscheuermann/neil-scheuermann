@@ -1,14 +1,11 @@
 import React, { Fragment, useEffect, useRef, useState } from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { MONOSPACE_FONT } from "../data/constants"
 import About from "../components/HomePage/About"
+import Blog from "../components/HomePage/Blog"
 
-// WTF? vvv
-const FinalLine = styled.div`
-  display: flexbox;
-`
 const Home = styled.div`
   height: calc(100vh + 48px);
   background-color: black;
@@ -42,15 +39,12 @@ const Portfolio = styled.div`
   background-color: #f5f5f5;
 `
 
-const Blog = styled.div`
-  height: calc(100vh + 48px);
-`
 const Contact = styled.div`
   height: calc(100vh + 48px);
   background-color: #616161;
 `
 
-const IndexPage = () => {
+const IndexPage = ({ data: markdownEntriesData }) => {
   const [line1Text, setLine1Text] = useState("")
   useEffect(() => {
     const interval = setInterval(() => {
@@ -64,13 +58,13 @@ const IndexPage = () => {
 
   const initialLine1Text = `I'm Neil Scheuermann and I'm`
   const line1 = useRef(null)
-  console.dir(line1)
 
   const onButtonClick = () => {
     // `current` points to the mounted text input element
     console.log("POOP")
   }
 
+  console.log("POOP>>>", markdownEntriesData)
   return (
     <Fragment>
       <Helmet>
@@ -97,12 +91,6 @@ const IndexPage = () => {
       </Helmet>
 
       {/* == BODY == */}
-      {/* -- NAV -- */}
-      <div>
-        <Link to="/about/">About</Link>
-        <Link to="/blog/">Blog</Link>
-        <div className="content"></div>
-      </div>
       {/* -- HOME -- */}
       <Home>
         <HomeBody>
@@ -110,12 +98,11 @@ const IndexPage = () => {
           <HomeText onClick={onButtonClick}>
             a full stack software engineer! (CLICK ME...)
           </HomeText>
-          <FinalLine>
-            <HomeText>Click here to view my work</HomeText>
-            <HomeCursor />
-          </FinalLine>
+          <HomeText>Click here to view my work</HomeText>
+          <HomeCursor />
         </HomeBody>
       </Home>
+
       {/* -- ABOUT -- */}
       <About />
 
@@ -123,10 +110,10 @@ const IndexPage = () => {
       <Portfolio>
         <h1>Portfolio</h1>
       </Portfolio>
+
       {/* -- BLOG -- */}
-      <Blog>
-        <h1>Blog</h1>
-      </Blog>
+      <Blog markdownEntriesData={markdownEntriesData} />
+
       {/* -- CONTACT -- */}
       <Contact>
         <h1>Contact</h1>
@@ -136,3 +123,21 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    allMarkdownRemark {
+      edges {
+        node {
+          excerpt
+          fileAbsolutePath
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+          }
+          timeToRead
+        }
+      }
+    }
+  }
+`
