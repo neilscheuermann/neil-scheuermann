@@ -31,3 +31,8 @@ For this to work I had to remove the following line.
 ```elixir
   field :inbox_id, :integer
 ```
+
+## 03/11/20
+
+I learned that running `docker stats` in **Platform** will show what container is using most
+of the **CPU** and **memory**
